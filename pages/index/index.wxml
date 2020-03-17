@@ -5,3 +5,4 @@
 bindgetuserinfo="clickBtn">{{name}}</button>
 <view wx:for="{{teacher}}"> {{item.name}}-{{item.age}}</view>
 <image src="https://dss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3173584241,3533290860&fm=26&gp=0.jpg"></image>
+<text>知识点2</text>
