@@ -1,29 +1,17 @@
 // pages/index/index.js
 
-  const app = getApp()
-console.log('----'+ app.globalData.name)
-
 Page({
   /**
    * 页面的初始数据
    */
   data: {
-      name:'lxy',
-    teacher: [{ name: 'one' }, { name: 'two' }, { name: 'three' }]
-  },
-  clickBtn(event){
-    this.setData({
-      name:'是我'
-    })
-    console.log(event)
+     
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
-
-
+    console.log('----11')
   },
 
   /**
