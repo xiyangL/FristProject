@@ -1,17 +1,23 @@
-// pages/index/index.js
-
+// pages/button/button.js
 Page({
+
   /**
    * 页面的初始数据
    */
   data: {
-     
+
+  },
+  onBindcontact(){
+    console.log('点击了我')
+  },
+  onContact() {
+    console.log('点击了第一个')
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log('----11')
+
   },
 
   /**
@@ -35,7 +41,6 @@ Page({
 
   },
 
-  
   /**
    * 生命周期函数--监听页面卸载
    */

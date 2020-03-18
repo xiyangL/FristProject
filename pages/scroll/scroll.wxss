@@ -1,0 +1,27 @@
+/* pages/scroll/scroll.wxss */
+.view1{
+  width: 100px;
+  height:100px;
+  background: powderblue;
+  margin: 10px;
+  display: inline-block;
+}
+
+.scroll1{
+  background: blanchedalmond;
+  height: 130px;
+  white-space: nowrap;
+}
+
+.view2{
+  height:100px;
+  background: powderblue;
+  margin: 10px;
+}
+
+.scroll2{
+  margin-top: 30px;
+  background: blanchedalmond;
+  height: 200px;
+  white-space: nowrap;
+}

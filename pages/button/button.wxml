@@ -1,0 +1,14 @@
+<!--pages/button/button.wxml-->
+<button bindtap="onContact">按钮</button>
+<button size="mini">按钮</button>
+<button type="primary">按钮</button>
+<button plain hover-class='hove'>按钮</button>
+<button hover-class="none">按钮</button>
+
+<view>
+  <button size='mini' hover-class='hover' >按钮one</button>
+</view>
+
+<button size='mini' open-type='contact' bindcontact='onBindcontact'>按钮</button>
+<button size='mini' open-type='share'>小程序分享</button>
+<button size='mini'>用户信息</button>

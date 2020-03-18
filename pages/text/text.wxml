@@ -1,0 +1,3 @@
+<!--pages/text/text.wxml-->
+<text selectable="{{true}}">Hello world\n</text>
+<text>你好小程序</text>

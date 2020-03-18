@@ -1,0 +1,18 @@
+<!--pages/image/image.wxml-->
+<image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"/>
+
+
+
+<!-- <image src="../../assets/ImageText/one.jpg"/> -->
+
+<image 
+mode="widthFix"
+show-menu-by-longpress 
+src="../../assets/ImageText/three.jpg"
+/>
+
+
+<!-- <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"/> -->
+
+<button bindtap="btnClick"> 按钮 </button>
+<image src="{{imagePath}}"></image>

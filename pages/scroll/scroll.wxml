@@ -1,0 +1,9 @@
+<!--pages/scroll/scroll.wxml-->
+<scroll-view scroll-x class="scroll1">
+   <view wx:for="{{9}}" class="view1">{{item}}</view>
+</scroll-view>
+
+
+<scroll-view scroll-y class="scroll2">
+   <view wx:for="{{9}}" class="view2">{{item}}</view>
+</scroll-view>
