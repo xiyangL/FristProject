@@ -1,2 +1,3 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<view style='color:yellow;font-size:40px'> 呵呵呵 </view>
+<view class=".box">呵呵哒</view>
