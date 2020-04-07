@@ -5,62 +5,32 @@ Page({
    * 页面的初始数据
    */
   data: {
-     
-  },
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-    console.log('----11')
+     count:0,
+     itemCount:0
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  handleIncrement(event){
+    this.setData({
+      count: this.data.count+1
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  clickBindtap(event){
+    console.log('++++',event)
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  itemClickBtn(event){
+    console.log(event)
+    const index = event.detail.index;
+    this.setData({
+      itemCount : index,
+    })
   },
-
-  
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  // 获取组件修改数据
+  handleIncrementCpn() {
+    //  通过class或者id拿到组件对象
+    const my_sel = this.selectComponent('.sel_class');
+    my_sel.handleIncrementCount(5)
   }
 })
+

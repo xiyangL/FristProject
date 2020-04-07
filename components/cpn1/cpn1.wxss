@@ -1,0 +1,5 @@
+/* components/cpn1/cpn1.wxss */
+.cpnView{
+  color: red;
+  font-size: 30rpx;
+}

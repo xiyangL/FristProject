@@ -1,2 +1,31 @@
 <!--pages/wxml/index.wxml-->
-<view>初始数据</view>
+
+<cpn1/>
+
+<my-prop title="哈哈哈" titleclass="red"/>
+<my-prop title="呵呵呵" titleclass="green"/>
+<my-prop title="滴滴滴" titleclassone="blue"/>
+
+<view>-----------</view>
+
+<!-- 组件内部发出事件 -->
+<view>当前计数器: {{count}}</view>
+<my-event bind:increment="handleIncrement"/>
+
+<!-- 5.tab-control的练习 -->
+<w-tab-control 
+items="{{['衣服','裤子','鞋子']}}" 
+itemIndex = "{{itemCount}}"
+itemclass='gray'
+bind:itemClick="itemClickBtn"
+/>
+
+<!-- 6 选中组件 修改数据 -->
+<button bindtap="handleIncrementCpn">修改组件数据</button>
+<my-sel class='sel_class'/>
+
+<!-- 7.插槽的使用 -->
+<my-slot>
+<button slot='slot2'>按钮</button>
+</my-slot>
+
