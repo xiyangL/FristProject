@@ -1,2 +1,6 @@
 <!--pages/wxml/index.wxml-->
-<view>初始数据</view>
+<button bindtap="handleShowToast">ShowToast</button>
+<button bindtap="handleShowModal">ShowModal</button>
+<button bindtap="handleShowLoading">ShowLoading</button>
+<button bindtap="handleShowActionSheet">ShowActionSheet</button>
+<button open-type="share">share</button>
