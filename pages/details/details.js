@@ -1,23 +1,24 @@
-// pages/index/index.js
-
+// pages/details/details.js
 Page({
 
-  switchPage(){
-    wx.navigateTo({
-      url: '/pages/details/details',
+  backIndexPage(){
+    wx.navigateBack({
+      
     })
   },
   /**
    * 页面的初始数据
    */
   data: {
-     changeName:'yang'
+
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log('----11')
+    console.log(options)
+
   },
 
   /**
@@ -41,12 +42,15 @@ Page({
 
   },
 
-  
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+      const pages = getCurrentPages();
+      const home = pages[pages.length - 2];
+      home.setData({
+        changeName:'xy'
+      })
   },
 
   /**

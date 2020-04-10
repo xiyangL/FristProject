@@ -1,2 +1,18 @@
 <!--pages/wxml/index.wxml-->
-<view>初始数据</view>
+<view>我是首页</view>
+<view>{{changeName}}</view>
+
+<navigator url="/pages/details/details">跳到详情页面</navigator>
+<view> ---------- </view>
+<navigator url="/pages/detailOne/detailOne?title=标题&name=xy" open-type="redirect">跳到详情页面(redirect)</navigator>
+
+
+<view> ---------- </view>
+<navigator url="/pages/home/home" open-type="switchTab">跳到tabbar(switchTab)</navigator>
+
+
+<view> ---------- </view>
+<navigator url="/pages/details/details" open-type="reLaunch">跳到reLaunch(reLaunch)</navigator>
+
+<!-- 手动调用切换页面 -->
+<button bindtap="switchPage">按钮</button>

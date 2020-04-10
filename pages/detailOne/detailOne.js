@@ -1,23 +1,28 @@
-// pages/index/index.js
-
+// pages/detailOne/detailOne.js
 Page({
 
-  switchPage(){
-    wx.navigateTo({
-      url: '/pages/details/details',
+  backIndexPage() {
+    wx.navigateBack({
+      delta:2
     })
   },
   /**
    * 页面的初始数据
    */
   data: {
-     changeName:'yang'
+    title:'',
+    name:''
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log('----11')
+    console.log(options)
+    this.setData({
+      title: options.title,
+      name: options.name
+    })
   },
 
   /**
@@ -41,7 +46,6 @@ Page({
 
   },
 
-  
   /**
    * 生命周期函数--监听页面卸载
    */

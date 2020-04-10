@@ -1,0 +1,5 @@
+<!--pages/details/details.wxml-->
+<text>我是详情页</text>
+<button bindtap="backIndexPage">返回</button>
+
+<navigator url="/pages/detailOne/detailOne">跳到详情One页面</navigator>

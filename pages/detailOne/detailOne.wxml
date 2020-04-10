@@ -1,0 +1,4 @@
+<!--pages/detailOne/detailOne.wxml-->
+<text>我是详情one页</text>
+<view>{{title}}+{{name}}</view>
+<button bindtap="backIndexPage">返回</button>
